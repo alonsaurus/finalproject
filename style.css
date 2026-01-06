@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* the header and the footer */
+.header, .footer {
+  background-color: green;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* flexbox part? https://www.w3schools.com/css/css3_flexbox.asp */
+.container {
+  display: flex;  
+  min-height: 70vh;
+  width:max-content;
+}
+
+/* side bar*/
+.sidebar {
+  flex: 1;   
+  background-color: lightgoldenrodyellow;
+  padding: 20px;
+  width:max-content;
+}
+
+/*main content section*/
+.content {
+  flex: 3;
+  padding: 20px;
+  background-color: lightgreen;
+}
