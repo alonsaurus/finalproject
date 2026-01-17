@@ -4,32 +4,100 @@
   box-sizing: border-box;
 }
 
-/* the header and the footer */
-.header, .footer {
+/* GREEN MAIN PAGE */
+/*header & footer */
+.headergreen, .footergreen {
   background-color: green;
   color: white;
   padding: 20px;
   text-align: center;
 }
 
-/* flexbox part? https://www.w3schools.com/css/css3_flexbox.asp */
-.container {
-  display: flex;  
-  min-height: 70vh;
-  width:max-content;
-}
-
 /* side bar*/
-.sidebar {
+.sidebargreen {
   flex: 1;   
   background-color: lightgoldenrodyellow;
   padding: 20px;
-  width:max-content;
 }
 
 /*main content section*/
-.content {
+.maingreen {
   flex: 3;
   padding: 20px;
   background-color: lightgreen;
+}
+
+/* RED MEDIA PAGE */
+/*header & footer */
+.headerred, .footerred {
+  background-color: rgb(116, 1, 1);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* side bar*/
+.sidebarred {
+  flex: 1;   
+  background-color: rgb(135, 0, 0);
+  padding: 20px;
+}
+
+/*main content section*/
+.mainred {
+  flex: 3;
+  padding: 20px;
+  background-color: rgb(192, 0, 0);
+}
+
+/* BLUE INFO PAGE */
+/*header & footer */
+.headerblue, .footerblue {
+  background-color: rgb(0, 2, 128);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* side bar*/
+.sidebarblue {
+  flex: 1;   
+  background-color: rgb(109, 155, 255);
+  padding: 20px;
+}
+
+/*main content section*/
+.mainblue {
+  flex: 3;
+  padding: 20px;
+  background-color: rgb(39, 48, 232);
+}
+
+
+/* flexbox part? https://www.w3schools.com/css/css3_flexbox.asp but idk how to make it so that they stack in mobile*/
+.content {
+  display: flex;  
+}
+/*media query for mobile*/
+@media (max-width: 600px) {
+  .content {
+    flex-direction: column;
+  }
+.headergreen img {
+  width:100%;
+}
+.headerred img {
+  width:100%;
+}
+.headerblue img {
+  width:100%;
+}
+.mainred iframe {
+  width:100%;
+  place-items: center;
+}
+  /* .sidebar,
+  .main {
+    width: 100%;
+  } */
 }
