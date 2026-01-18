@@ -46,7 +46,6 @@ if (score <= 3) {
     carDescription.textContent = "the messerschmitt kr200 is a 3 wheeled microcar that was produced in the 1950s. it has a 200cc engine and a max speed of 45 mph. you're so niche and chic that you get this cute little vintage car!";
 } else if (score <= 17) {
     carName.textContent = "Tesla Cybertruck";
-    carImage.src = "teslacybertruck.jpg";
     carDescription.textContent = "i apologize. no explanation.";
 } else if (score <= 20) {
     carName.textContent = "OshKosh Mail Van";
