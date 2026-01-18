@@ -6,6 +6,7 @@
     <title>audrey's violin website!</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <script src="quiz.js"></script>
 </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -29,6 +30,80 @@
     </div>
   </div>
 </nav>
+<h1 class="quizheader"> i assign you a stupid car! </h1>
 
-<p>empty for now</p>
+<!-- first question -->
+<div id="q1">
+    <p>do you think you are a good driver?</p>
+    <button onclick="answer(3)">yes 100%</button>
+    <button onclick="answer(2)">i'm average</button>
+    <button onclick="answer(1)">i am actually horrible at driving and i can't parallel park :( </button>
+    <button onclick="answer(0)">i can't drive</button>
+</div>
+
+<!-- second question -->
+<div id="q2" hidden>
+    <p>how fast do you drive?</p>
+    <button onclick="answer(4)">f1 driver fast</button>
+    <button onclick="answer(3)">ten over the speed limit</button>
+    <button onclick="answer(2)">exactly at the speed limit</button>
+    <button onclick="answer(1)">below the speed limit</button>
+    <button onclick="answer(0)">again, i can't drive (legally, at least)</button>
+</div>
+
+<!-- third question -->
+<div id="q3" hidden>
+    <p>pick a guy based on their name</p>
+    <button onclick="answer(5)">Colin McRae</button>
+    <button onclick="answer(4)">Kimi Raikkonen</button>
+    <button onclick="answer(3)">Carlos Sainz</button>
+    <button onclick="answer(2)">David Malukas</button>
+    <button onclick="answer(1)">Ricciardo Adami</button>
+    <button onclick="answer(0)">Nicholas Latifi</button>
+</div>
+
+<!-- fourth question -->
+<div id="q4" hidden>
+    <p>do you like frogs?</p>
+    <button onclick="answer(3)">i identify as a frog</button>
+    <button onclick="answer(2)">i love frogs</button>
+    <button onclick="answer(1)">they're okay...</button>
+    <button onclick="answer(0)">no ew they're so creepy</button>
+</div>
+
+<!-- fifth question -->
+<div id="q5" hidden>
+    <p>how much do you road rage?</p>
+    <button onclick="answer(3)">at everyone and everything</button>
+    <button onclick="answer(2)">when they deserve it</button>
+    <button onclick="answer(1)">occasionally</button>
+    <button onclick="answer(0)">i never rage (liar)</button>
+</div>
+
+<!-- sixth question -->
+<div id="q6" hidden>
+    <p>do you know why 67 is funny</p>
+    <button onclick="answer(3)">no i am an old geezer</button>
+    <button onclick="answer(2)">not really but it's still funny to me</button>
+    <button onclick="answer(1)">yes i have unfortunately been exposed to it</button>
+    <button onclick="answer(0)">yes i am gen z</button>
+</div>
+
+<!-- seventh question -->
+<div id="q7" hidden>
+    <p>are you rich?</p>
+    <button onclick="answer(20)">yes and i want everyone to know it</button>
+    <button onclick="answer(2)">somewhere in the middle</button>
+    <button onclick="answer(1)">no but i have enough</button>
+    <button onclick="answer(0)">no i'm broke lol (me too buddy)</button>
+</div>
+
+<!-- results -->
+<div id="result" hidden>
+    <h2 id="carName"></h2>
+    <p id="carDescription"></p>
+    <img id="carImage">
+</div>
+</div>
 </body>
+</html>
